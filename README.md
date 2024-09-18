@@ -1,2 +1,2 @@
 # Credipop-2
-we clear all the confusions spreads only  
+we clear all the confusions spreads online 
