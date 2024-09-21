@@ -117,6 +117,7 @@
 /* Our Specialities */
 
 .main-body .our-specialities {
+    height: auto;
     display: flex;
     justify-content: center;
     background-image: linear-gradient(#B866D7, #EE609C);
@@ -415,22 +416,39 @@
                     /* THE END OF PROGRAM */
 
                     /* MEDIA QUERY STARTS */
-/* 885px */            
+
+/* 1110px */  
+@media only screen and (max-width: 1100px){
+    .main-body header .banner-one .wrapper .content h1 {
+        font-size: 50px; 
+    }
+     
+    .main-body .who .wrapper .image-who img {
+        height: 80%;
+        width: 80%;
+    }
+    
+.main-body .who .wrapper .content-who {
+    width: 50%;
+}
+}
+
+/* 885px */  
 @media only screen and (max-width: 885px){
     
     
     /* who */
     
-    .main-body .who .wrapper .content-who .who-two .icon-holder {
+.main-body .who .wrapper .content-who .who-two .icon-holder {
         gap: 40px;}
-        .main-body .who .wrapper .image-who img {
+.main-body .who .wrapper .image-who img {
             height: 300px;
             width: 300px;
         }
-        .main-body .who .wrapper .content-who {
+.main-body .who .wrapper .content-who {
             gap: 50px;
     }
-    .main-body .who .wrapper {
+.main-body .who .wrapper {
         height: 60%;
 }
 .main-body .who {
@@ -445,7 +463,9 @@
     width: 100%;
     height: 90%;
 }
-
+.main-body .diffrence .wrapper .card-holder .cards {
+    height: 350px;
+}x
 
 /* FAQ */
 .main-body .faq .wrapper .faq-main  .faq-image{
@@ -459,7 +479,9 @@
     width: 60px;
     height: 60px;
 }
+
 }
+/* }835 px */
 @media only screen and (max-width: 835px){
 
     /* who-section */
@@ -494,6 +516,11 @@
     .main-body .diffrence .wrapper .card-holder .cards .content {
         gap: 10px;
     }
+
+    /* faq */
+    .main-body .faq {
+        margin-bottom: 0px;
+    }
        /* reviews */
        .main-body .review {
         margin-bottom: 40px;
@@ -506,7 +533,7 @@
     .main-body .review .wrapper .customer-reviews .reviews-details {
         height: 100px;
         width: 100%;
-        padding: 10px 5px;
+        padding: 10px 0px;
     }
     .main-body .review .wrapper {
         gap: 40px;
@@ -525,12 +552,15 @@
     .main-body .review .wrapper .customer-reviews .reviews-details {
         height: auto;
         width: 100%;
-        padding: 10px 5px;
+        padding: 10px 0px;
     }
 
     .main-body .review .wrapper .customer-reviews .review-column {
     height: 100px;
     width: 100%;
+}
+.main-body .review {
+    margin-bottom: 0px;
 }
 }
 /* width -680px */
@@ -569,15 +599,30 @@
 }
 
 /* WIDTH-550PX */
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 560px){
     .fs-20 {font-size: 12px;}
+    .fs-40 {
+        font-size: 30px;
+    }
+    .main-body .head nav ul  li a {
+        font-size: 12px;
+    }
+    .button-nav {
+        padding: 8px 8px;
+    }
 /* who */
+.main-body header .banner-one .wrapper .content h1 {
+    font-size: 40px;
+}
 .main-body .who {
     margin-bottom: 0px;
 }
 /*our specialities */
 .main-body .our-specialities .wrapper {
     height: 550px;
+}
+.main-body .our-specialities .wrapper .our-two .head-one h1{
+    font-size: 28px;
 }
 
 /* DIFFERENCES-SECTION */
@@ -610,7 +655,146 @@
 }
 /* width-530px */
 @media only screen and (max-width: 530px){
+    /* who */
+.main-body .who .wrapper .content-who .who-two {gap: 24px;}
+
+.main-body .who .wrapper .image-who img {
+    height: 230px;
+    width: 230px;
+}
+.main-body .who .wrapper .content-who .who-two .icon-holder .icon p{
+    font-size: 14px;
+}
+.main-body .who .wrapper .content-who .who-two .icon-holder .icon img{
+    width: 48px;
+    height: 48px;
+}
+.main-body .who .wrapper .content-who .who-two .icon-holder .icon:nth-child(3) img {
+    width: 42px;
+    height: 42px;
+}
+/* speacilities */
+.main-body .our-specialities .wrapper .our-two .head-one h1 {
+    font-size: 20px;
+}
+     /* reviews */
+     .main-body .review {
+        height: 600px;
+        margin-bottom: 20px;
+    }
     
+    
+}
+@media only screen and (max-width: 480px){
+
+    /* banner  */
+    .main-body header .banner-one{
+        height: 500px;
+    }
+    .main-body header .banner-one .wrapper .image{
+        width: 70%;}
+        /* who */
+        .main-body .who {
+            height: 300px;
+        }
+        .main-body .who .wrapper .image-who {
+            display: none;
+        }
+        .main-body .who .wrapper .content-who {
+            width: 100%;
+        }
+        .main-body .who .wrapper .content-who{
+            gap: 20px;
+        }
+
+
+    /* our special */
+    .main-body .our-specialities .wrapper {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: start;
+        align-items: center;
+    }
+    .main-body .our-specialities .wrapper .our-one{
+        flex-direction: row;
+        gap: 15px;
+        flex-wrap: wrap;
+        order: 2;
+    }
+    .main-body .our-specialities .wrapper .our-two .head-two{
+        display: none;
+    }
+    .main-body .our-specialities .wrapper .our-three{
+        flex-direction: row;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .main-body .our-specialities .wrapper .card {
+        width: 130px;
+        height: 130px;
+        border-radius: 10px;
+        &:hover{
+            background-color: #443344;
+            color: #F0F4FF;
+        }
+    }
+    .main-body .our-specialities {
+        height: 700px;
+        padding-top: 10px;
+        
+    }
+}
+@media only screen and (max-width: 410px){
+
+    /* banner */
+.main-body header .banner-one .wrapper  {
+    height: 350px;
+}
+.main-body header .banner-one .wrapper .content {
+        width: 100%;
+    }
+    .main-body header .banner-one .wrapper .image{
+        display: none;
+    }
+    /* our specail */
+    .main-body .our-specialities {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .main-body .our-specialities .wrapper{
+        height: auto;
+    }
+
+.main-body .our-specialities .wrapper .our-two {
+    justify-content: start;
+    
+}
+.main-body .our-specialities .wrapper .our-two .head-one p {
+    text-align: start;
+}
+.main-body .our-specialities .wrapper .our-two .head-one h1 {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: start;
+}
+.main-body .our-specialities .wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+    /* review */
+.main-body .review {
+    height: auto;
+    }
+    /* faq */
+.main-body .faq .wrapper .faq-main .faq-image{
+    display: none;
+    }
+.main-body .faq .wrapper .faq-main .faq-questions {
+    width: 90%;
+    margin-bottom: 10px;
+    }
 }
     
     
