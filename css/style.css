@@ -17,6 +17,7 @@
 .fs-30{font-size: 28px;}
 .fs-32{font-size: 32px;}
 .fs-40{font-size: 40px;}
+.fs-56{font-size: 56px;}
 .fs-60{font-size: 60px;}
 .fs-120{font-size: 120px;}
 .fs-128{font-size: 128px;}
@@ -69,12 +70,20 @@ button{
     border: none;
     background-color: none;
 }
+.click{
+    background-color:#F0F4FF;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #731058;
+    font-weight: 700;
+}
+
 
 /* HEADER */
 .main-body .head{
     width: 100%;
     height: 100vh;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -111,11 +120,6 @@ button{
     justify-content: center;
     align-items: center;
     gap:45px;
-}
-.main-body .head .wrapper ul li a .click{
-    background-color:#F0F4FF ;
-    border-radius: 5px;
-    padding: 3px 5px;
 }
 
 
